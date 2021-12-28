@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <style data="theme" type="text/css"></style>
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <div class="calculator">
+    <div class="theme">
+      <h1>calc</h1>
+      <div class="theme-slider">
+        <span class="th-color">Theme</span>
+        <div class="slider-input">
+          <div class="slider-numbers">
+            <span class="theme1">1</span>
+            <span class="theme2">2</span>
+            <span class="theme3">3</span>
+          </div>
+          <input type="range" min="1" max="3" value="1" class="slider">
+        </div>
+      </div>
+    </div>
+    <input type="text" class="screen">
+    <div class="numbers">
+      <div class="col1">
+        <button type="button" class="btn btn-number" data-num="7">7</button>
+        <button type="button" class="btn  btn-number" data-num="8">8</button>
+        <button type="button" class="btn  btn-number" data-num="9">9</button>
+        <button type="button" class="btn-action btn-delete">del</button>
+      </div>
+      <div class="col2">
+        <button type="button" class="btn  btn-number" data-num="4">4</button>
+        <button type="button" class="btn  btn-number" data-num="5">5</button>
+        <button type="button" class="btn  btn-number" data-num="6">6</button>
+        <button type="button" class="btn  btn-number" data-num="+">+</button>
+      </div>
+      <div class="col3">
+        <button type="button" class="btn  btn-number" data-num="1">1</button>
+        <button type="button" class="btn  btn-number" data-num="2">2</button>
+        <button type="button" class="btn  btn-number" data-num="3">3</button>
+        <button type="button" class="btn  btn-number" data-num="-">-</button>
+      </div>
+      <div class="col4">
+        <button type="button" class="btn  btn-number" data-num=".">.</button>
+        <button type="button" class="btn  btn-number" data-num="0">0</button>
+        <button type="button" class="btn  btn-number" data-num="/">/</button>
+        <button type="button" class="btn  btn-number" data-num="*">x</button>
+      </div>
+      <div class="col5">
+        <button type="button" class="btn-action btn-reset">reset</button>
+        <button type="button" class="btn-equal">=</button>
+      </div>
+    </div>  
+  </div>
+</body>
+</html>

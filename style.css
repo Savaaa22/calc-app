@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  color: hsl(30, 25%, 89%);
+}
+.theme {
+  margin-bottom: 1em;
+}
+.screen {
+  background-color: hsl(224, 36%, 15%);
+  border: none;
+  border-radius: 5px;
+  height: 100px;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 0.5em;
+  text-align: right;
+  padding: 0.3em;
+}
+.numbers {
+  background-color: hsl(223, 31%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1em;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  font-size: 2em;
+  width: 80px;
+  height: 55px;
+  margin: 0.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: hsl(221, 14%, 31%);
+}
+.btn {
+  background-color: hsl(30, 25%, 89%);
+  border-bottom: 5px solid hsl(28, 16%, 65%);
+}
+
+.btn-action {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(30, 25%, 89%);
+  border-bottom: 5px solid hsl(224, 28%, 35%);
+}
+.btn-equal {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(30, 25%, 89%);
+  border-bottom: 5px solid hsl(6, 70%, 34%);
+}
+.col5 button {
+  width: 180px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 33px;
+  background: hsl(223, 31%, 20%);
+  outline: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: hsl(6, 63%, 50%);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.theme-slider {
+  display: flex;
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme span {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.slider-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.slider-numbers span {
+  cursor: pointer;
+}
+
+.slider-input {
+  margin-left: 2em;
+}
+
+.theme-slider > span {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 550px) {
+  .calculator {
+    padding: 15px;
+  }
+  .screen {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  button {
+    width: 60px;
+    height: 35px;
+    font-size: 1.5em;
+  }
+  .col5 button {
+    width: 140px;
+  }
+}
